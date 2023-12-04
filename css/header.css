@@ -1,0 +1,318 @@
+
+/* ===================================================================
+ * # header 
+ *
+ * ------------------------------------------------------------------- */
+ .s-header {
+    background-color: #050505;
+
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .s-header.sticky {
+    background-color: #050505;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  /* -------------------------------------------------------------------
+   * ## header logo
+   * ------------------------------------------------------------------- */
+  .header-logo {
+    display: inline-block;
+    margin: 6px 0 0 0;
+    padding: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    left: 40px;
+  }
+  
+  .header-logo a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+  }
+  
+  .header-logo img {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+  }
+  
+  /* -------------------------------------------------------------------
+   * ## main navigation
+   * ------------------------------------------------------------------- */
+  .header-nav-wrap {
+    display: inline-block;
+  }
+  
+  .header-nav-wrap ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 18px;
+  }
+  
+  .header-nav-wrap li {
+    display: inline-block;
+    padding-left: 0;
+  }
+  
+  .header-nav-wrap li a {
+    display: block;
+    line-height: calc(78px - (18px * 2));
+  }#050505
+  
+  .header-main-nav {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 0 4px;
+    z-index: 2;
+    position: static;
+  }
+  
+  .header-main-nav li {
+    margin: 0 2rem;
+  }
+  
+  .header-main-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  
+  .header-main-nav a:hover,
+  .header-main-nav a:focus,
+  .header-main-nav a:active {
+    color: #ffffff;
+  }
+  
+  .header-main-nav .current a {
+    color: #ffffff;
+  }
+  
+  .header-social {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+  
+  .header-social li {
+    margin-right: 1rem;
+  }
+  
+  .header-social li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-social li a {
+    color: #ffffff;
+  }
+  
+  /* ------------------------------------------------------------------- 
+   * ## menu trigger
+   * ------------------------------------------------------------------- */
+  .header-menu-toggle {
+    display: none;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all .3s;
+    position: absolute;
+    right: 32px;
+    top: 18px;
+  }
+  
+  .header-menu-toggle:hover,
+  .header-menu-toggle:focus {
+    color: #ffffff;
+  }
+  
+  .header-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #ffffff;
+    transition: all .5s;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    right: auto;
+    bottom: auto;
+  }
+  
+  .header-menu-toggle span::before,
+  .header-menu-toggle span::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+  }
+  
+  .header-menu-toggle span::before {
+    top: -9px;
+  }
+  
+  .header-menu-toggle span::after {
+    bottom: -9px;
+  }
+  
+  .header-menu-toggle.is-clicked span {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .1s;
+  }
+  
+  .header-menu-toggle.is-clicked span::before,
+  .header-menu-toggle.is-clicked span::after {
+    background-color: white;
+  }
+  
+  .header-menu-toggle.is-clicked span::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .header-menu-toggle.is-clicked span::after {
+    bottom: 0;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  
+  /* ------------------------------------------------------------------- 
+   * responsive:
+   * header
+   * ------------------------------------------------------------------- */
+  @media screen and (max-width:1200px) {
+    .header-main-nav {
+      font-size: 12px;
+    }
+  
+    .header-main-nav li {
+      margin: 0 1.4rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:1000px) {
+    .s-header {
+      text-align: right;
+    }
+  
+    .header-nav-wrap {
+      margin-right: 36px;
+    }
+  
+    .header-nav-wrap .header-social {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (max-width:800px) {
+    .s-header {
+      background-color: #050505;
+      position: fixed;
+      top: 0;
+    }
+  
+    .header-logo img {
+      width: 128px;
+      height: 30px;
+    }
+  
+    .header-nav-wrap {
+      display: none;
+      text-align: left;
+      height: auto;
+      width: 100%;
+      background-color: #050505;
+      padding: 120px 44px 64px;
+    }
+  
+    .header-nav-wrap .header-main-nav {
+      display: block;
+      padding-left: 0;
+      height: auto;
+      margin: 0 0 4rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  
+    .header-nav-wrap .header-main-nav li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  
+    .header-nav-wrap .header-main-nav li a {
+      padding: 18px 0;
+      line-height: 20px;
+    }
+  
+    .header-nav-wrap .header-social {
+      display: block;
+      position: static;
+    }
+  
+    .header-nav-wrap .header-social li {
+      font-size: 1.8rem;
+      margin-right: 1.6rem;
+    }
+  
+    .header-nav-wrap .header-social li a {
+      line-height: 36px;
+    }
+  
+    .header-menu-toggle {
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (max-width:600px) {
+    .header-logo {
+      left: 35px;
+    }
+  
+  }
+  
+  /* -------------------------------------------------------------------
+   * make sure the menu is visible on larger screens
+   * ------------------------------------------------------------------- */
+  @media only screen and (min-width:801px) {
+    .header-nav-wrap {
+      display: block !important;
+    }
+  
+  }
+  
+  

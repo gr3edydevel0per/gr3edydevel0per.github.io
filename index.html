@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <script src="https://kit.fontawesome.com/4f0c128bad.js" crossorigin="anonymous"></script>
     <script src="js/modernizr.js"></script>
@@ -20,65 +21,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/k.png">
     <link rel="manifest" href="site.webmanifest">
 
-
-    
-<!-- Inner CSS for popups windows-->
 <style>
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+
+.card-title{
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.176;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-top: 0;
+    padding-top: 1.2rem;
+    position: relative;
 }
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-
-
-
-
 </style>
-<!--Inned CSS End-->>
+
 
 
 </head>
@@ -367,14 +325,13 @@
 
 
 
+
+
     <section id="works" class="s-works target-section">
 
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
                 <h2 class="section-heading section-heading--centerbottom">The School of Life</h2>
-                <p  style="font-size: 3rem;">
-                    Here are my Process Book and Assignment that I have done during my course journey . 
-                </p>
             </div>
         </div> 
 
@@ -382,53 +339,43 @@
 
             <div class="masonry">
                 <div class="grid-sizer"></div>
-    
+
                 <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/sol.gif" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/portfolio/sol.gif" 
-                                      alt="">
-                            </a>    
-                        </div>
-    
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Living Conversation
-                            </h4>
-                          
-                        </div>
-    
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    
+                    <div class="card post-item bg-transparent border-0 mb-5">
+                        <a href="blogs/binaryrealm.html">
+                            <img class="card-img-top rounded-0" src="blogs/images/post/post-lg/03.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a class="text-white opacity-75-onHover" href="post-details.html">Into The Binary Realm</a>
+                            </h2>
+                            <a href="blogs/binaryrealm.html" class="btn btn--primary ">Read More <img src="blogs/images/arrow-right.png" alt=""></a>
                         </div>
                     </div>
                 </div> 
+
                 <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/wwd.gif" 
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Working With Data
-                            </h4>
-                         
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    
+                    <div class="card post-item bg-transparent border-0 mb-5">
+                        <a href="#">
+                            <img class="" src="blogs/images/post/post-lg/02.png" alt="">
+                        </a>
+                        <div class="card-body px-0">
+                            <h2 class="card-title">
+                                <a class="text-white opacity-75-onHover" href="#">Coming Soon !!</a>
+                            </h2>
+                            <a href="#" class="btn btn--primary ">Read More <img src="blogs/images/arrow-right.png" alt=""></a>
                         </div>
                     </div>
                 </div> 
+
 
 
             </div> 
 
         </div> 
-    </section>-->
+    </section>
 
 
     <section id="contact" class="s-contact ss-dark target-section">
