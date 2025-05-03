@@ -324,6 +324,7 @@ Terminal
 * Desktop Icons
 *****************************/
 .desktop-icons {
+  padding-left: 22px;
   position: absolute;
   top: 10px;
   left: 20px;
@@ -348,7 +349,7 @@ Terminal
 }
 
 .desktop-icons .app .app-name {
-  left: 30px;
+  left: 6px;
   color: white;
   position: relative;
 } 

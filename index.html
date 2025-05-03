@@ -44,30 +44,32 @@
 
     <!-- Desktop Icons -->
     <div class="desktop-icons">
-      <div class="app" onclick="toggleSkillVisibility()">
-        <img src="assets/images/LibreOffice_Draw-Logo.wine.png" alt="App 1" />
-        <span class="app-name">Skills</span>
-      </div>
-      <div class="app" onclick="toggleResumeVisibility()">
-        <img src="assets/images/LibreOffice_Writer-Logo.wine.png" alt="App 2" />
-        <span class="app-name" style="left: 18px;">Resume</span>
-      </div>
-      <div class="app">
-        <img src="assets/images/badges.png" alt="" style="width: 34px;
-        padding-left: 22px;
-        height: 40px;margin-top:15px">
-        <span class="app-name" style="left: 20px;">Achievements</span>
-      </div>
+
 
       <div class="app" onclick="toggleWhoamiVisibility()" >
-        <img src="assets/images/impress.png" alt="App 3"style="  width: 100px;margin-left: 0px;" />
-        <span class="app-name" style="left:19px">whoami</span>
+        <img src="assets/images/impress.png" alt="App 3" style="width: 49px;
+        
+        height: 49px;margin-top:15px" />
+        <span class="app-name" style="top:6px">whoami</span>
       </div>
 
-      <div class="app" onclick="toggleContactMeVisibility()" >
-        <img src="assets/images/thunderbird-removebg-preview.png" alt="App 3"style="  width: 100px;margin-left: 0px;" />
-        <span class="app-name" style="left:19px">contact me</span>
+      <div class="app" onclick="toggleResumeVisibility()">
+        <img src="assets/images/LibreOffice_Writer-Logo.wine.png" alt="App 2" style="width: 49px;
+        
+        height: 49px;margin-top:15px"/>
+        <span class="app-name" style="    top: 8px;
+    ">Resume</span>
       </div>
+      <div class="app">
+        <img src="assets/images/badges.png" alt="" style="width: 49px;
+        
+        height: 49px;margin-top:15px">
+        <span class="app-name" style=" left:-4px !important;   top: 6px;
+    ">Milestones</span>
+      </div>
+
+   
+     
 
     </div>
 
@@ -105,42 +107,6 @@
 
     </div>
 
-    <div id="file-explorer" class="app-window">
-      <div ng-include="'./view/top-bar.html'"></div>
-      <div style="display: flex;height: 100%;">
-        <div class="sidebar">
-          <a href="#"><img src="assets/images/display.png" alt="">Computer</a>
-          <a href="#"><img src="assets/images/mc-logo.png" alt="">greedydev</a>
-          <a href="#"><img src="assets/images/document-open-recent.png" alt="">Recent</a>
-          <a href="#"><img src="assets/images/user-trash.png" alt="">Trash</a>
-          <a href="#"><img src="assets/images/disk-usage-analyzer.png" alt="">File System</a>
-          <a href="#"><img src="assets/images/dhcpcd.png" alt="">Network</a>
-        </div>
-        <div class="folder-content">
-          <div class="folder">
-            <div class="folder-icon"></div>
-            <div class="folder-description">BatteryLife</div>
-          </div>
-          <div class="folder">
-            <div class="folder-icon"></div>
-            <div class="folder-description">Books</div>
-          </div>
-          <div class="folder">
-            <div class="folder-icon"></div>
-            <div class="folder-description">BufferOverFlow</div>
-          </div>
-          <div class="folder">
-            <div class="folder-icon"></div>
-            <div class="folder-description">Circuit Designer</div>
-          </div>
-          <div class="folder">
-            <div class="folder-icon"></div>
-            <div class="folder-description">Desktop</div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
 
 
 
@@ -150,10 +116,10 @@
       <div id="start-button">
         <img src="assets/images/kali-menu.png" id="start-menu-btn" alt="Start" />
         <div id="taskbar-icons">
-          <img src="assets/images/mc-logo.png" alt="App 1" style="margin-left: 10px" onclick="toggleFileVisibility()" />
-          <img src="assets/images/accessories-text-editor.png" alt="App 2" />
+          <img src="assets/images/accessories-text-editor.png" alt="App 2"  onclick="toggleResumeVisibility()"/>
           <img id="terminal-toggle" src="assets/images/x-terminal-emulator.png" alt="App 3"
             onclick="toggleTerminalVisibility()" />
+          <img src="assets/images/thunderbird-removebg-preview.png" onclick="toggleContactMeVisibility()">
         </div>
       </div>
 

@@ -412,7 +412,7 @@ function addLog() {
         logTextElement.appendChild(logLine);
         logTextElement.scrollTop = logTextElement.scrollHeight; // Auto-scroll to the bottom
         index++;
-        setTimeout(addLog, 5); // Adjust speed of log appearance
+        setTimeout(addLog, 0.1); // Adjust speed of log appearance
     } else {
         document.querySelector('.bootup-screen').style.display = 'none';
         const content = document.querySelector(".main").style.display = 'block';
