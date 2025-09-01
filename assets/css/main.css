@@ -12,6 +12,16 @@ body {
 *****************************/
 
 
+/* hide main for smaller screens */
+
+@media (max-width: 440px) {
+
+  .main {
+
+    display: none !important;
+  }
+}
+
 
 #bootup {
   display: flex;
